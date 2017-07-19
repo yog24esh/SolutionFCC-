@@ -1,0 +1,25 @@
+Wherefore art thou
+
+function whatIsInAName(collection, source) {
+  // What's in a name?
+  var arr = [];
+  // Only change code below this line
+  
+  var key = Object.keys(source);
+   return collection.filter(function(item1){
+    
+   return key.every(function(item){
+       
+    return item1.hasOwnProperty(item) && source[item] === item1[item] ;
+         
+    
+    
+   
+  });
+  });
+  // Only change code above this line
+  
+}
+
+  
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
